@@ -27,12 +27,6 @@ variable "instance-key-name" {
   default     = ""
 }
 
-variable "iam-role-name" {
-  description = "The IAM role to assign to the instance"
-  type        = "string"
-  default     = ""
-}
-
 variable "instance-associate-public-ip" {
   description = "Defines if the EC2 instance has a public IP address."
   type        = "string"
