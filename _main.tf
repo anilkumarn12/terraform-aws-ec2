@@ -6,7 +6,6 @@ resource "aws_instance" "instance" {
   ami                         = "${var.instance-ami}"
   instance_type               = "${var.instance-type}"
  
-  iam_instance_profile        = "${var.iam-role-name != "" ? var.iam-role-name : ""}"
   key_name                    = "${var.instance-key-name != "" ? var.instance-key-name : ""}"
   associate_public_ip_address = "${var.instance-associate-public-ip}"
   # user_data                   = "${file("${var.user-data-script}")}"
