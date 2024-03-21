@@ -57,7 +57,7 @@ variable "subnet-cidr-block" {
   default     = "10.0.1.0/24"
 }
 
-variable "vpc-tag-name" {
+variable "vpc-tag-name" { 
   description = "The Name to apply to the VPC"
   type        = string
   default     = "VPC-created-with-terraform"
